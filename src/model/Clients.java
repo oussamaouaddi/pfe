@@ -52,16 +52,13 @@ public class Clients implements java.io.Serializable {
 	
 	}
 
-	public Clients(int idClient, Ville ville, Langue langue, String nom,
+	public Clients(int idClient,  String nom,
 			String prenom, String dateNaissance, String numMobile,
 			String numFix, String email, Integer compteCourant,
-			Integer compteEpargne, Float salaireMensuel, Float dernierSalairee,
-			byte[] document, byte[] photo,
-			Set<CreditImmobilier> creditImmobiliers) {
+			Integer compteEpargne, Float salaireMensuel, Float dernierSalairee
+		) {
 		this.idClient = idClient;
-		this.ville = ville;
-		this.langue = langue;
-		this.nom = nom;
+			this.nom = nom;
 		this.prenom = prenom;
 		this.dateNaissance = dateNaissance;
 		this.numMobile = numMobile;
@@ -71,9 +68,7 @@ public class Clients implements java.io.Serializable {
 		this.compteEpargne = compteEpargne;
 		this.salaireMensuel = salaireMensuel;
 		this.dernierSalairee = dernierSalairee;
-		this.document = document;
-		this.photo = photo;
-		this.creditImmobiliers = creditImmobiliers;
+
 	}
 	
 	public Clients(int idClient,  String nom,

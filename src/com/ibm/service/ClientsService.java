@@ -63,9 +63,9 @@ public class ClientsService {
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	
 	public String addClient(@FormParam(value="id")int id,@FormParam(value="firstName")String firstName,@FormParam(value="ville")int ville,@FormParam(value="nationality")int nationality,@FormParam(value="lastName")String lastName,@FormParam(value="date_naissance")String date_naissance,@FormParam(value="mobile")String mobile,@FormParam(value="fix")String fix,@FormParam(value="email")String email,@FormParam(value="compte_courant")int compte_courant,@FormParam(value="compte_epargne")int compte_epargne,@FormParam(value="salaire_mensuel")Float salaire_mensuel,@FormParam(value="dernier_salaire")Float dernier_salaire){
-		//Clients cc = new Clients(id, firstName, lastName,date_naissance,mobile,fix,email,compte_courant,compte_epargne,salaire_mensuel,dernier_salaire,photo,document);
-		//Clients  c = new Clients(id, ville, nationality,firstName, lastName,date_naissance,mobile,fix,email,compte_courant,compte_epargne,salaire_mensuel,dernier_salaire);
-		//met.addClients(cc);
+		Clients cc = new Clients(id, firstName, lastName,date_naissance,mobile,fix,email,compte_courant,compte_epargne,salaire_mensuel,dernier_salaire);
+//		Clients  c = new Clients(id, ville, nationality,firstName, lastName,date_naissance,mobile,fix,email,compte_courant,compte_epargne,salaire_mensuel,dernier_salaire);
+		met.addClients(cc);
      
 	//return Response.status(200).entity(met.getallbooks().get(1).getAuteur()).build();
 		return "Client  Ajouter";
